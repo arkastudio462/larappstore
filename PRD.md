@@ -35,6 +35,23 @@ LarAppStore adalah platform distribusi konten digital (aplikasi, game, software,
 
 ### Dependensi
 
+###
+# Basis URL publik objek R2 untuk browser (biasanya sama dengan R2_URL)
+VITE_MEDIA_URL="https://pub-85fc955824e4421087e553cd6bf00ef2.r2.dev"
+
+# Cloudflare R2 (S3-compatible)
+R2_ACCESS_KEY_ID=c269b976a468fffd7c6b99aafad52983
+R2_SECRET_ACCESS_KEY=098c4315668dc4d10cc26220283a235ac8ac68794822f0125936a138a723a3ab
+R2_BUCKET=appfeed
+R2_ENDPOINT=https://f6453feed86a5c7f445539ff97894ddd.r2.cloudflarestorage.com
+R2_URL=https://pub-85fc955824e4421087e553cd6bf00ef2.r2.dev
+
+# Midtrans
+MIDTRANS_IS_PRODUCTION=false
+MIDTRANS_MERCHANT_ID=G771649207
+MIDTRANS_CLIENT_KEY=SB-Mid-client-XKXSsGJy3UEJfWey
+MIDTRANS_SERVER_KEY=SB-Mid-server-z6TJU9co9gqtv0edTJanoYKG
+
 ```
 composer require league/flysystem-aws-s3-v3 midtrans/midtrans-php
 npm i vue vue-router pinia axios lucide-vue-next chart.js @vitejs/plugin-vue
